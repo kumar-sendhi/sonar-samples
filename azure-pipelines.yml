@@ -22,7 +22,14 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+- task: SonarQubePrepare@6
+  displayName: Prepare Analysis Configuration task
+  inputs:
+    SonarQube: 'sonarconnection'
+    scannerMode: 'MSBuild'
+    projectKey: 'sonar_sonar_2e4fed2c-2ea3-417c-8bba-100765b0fb43'
+    projectName: 'sonar'
+  enabled: true
 - task: MSBuild@1
   inputs:
     solution: '$(solution)'
