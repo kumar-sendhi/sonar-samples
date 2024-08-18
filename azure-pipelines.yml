@@ -12,7 +12,7 @@ pool:
   - Agent.Name -equals DESKTOP-K0VL8JK
 
 variables:
-  solution: 'dotnet/WebApp45/WebApp45.sln'
+  solution: '**/**/WebApp45.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
