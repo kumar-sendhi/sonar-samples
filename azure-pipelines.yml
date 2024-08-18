@@ -28,7 +28,7 @@ steps:
     SonarQube: 'sonarconnection'
     scannerMode: 'MSBuild'
     projectKey: 'mysample'
-    projectName: 'sonar'
+    projectName: 'mysample'
   enabled: true
 - task: MSBuild@1
   inputs:
